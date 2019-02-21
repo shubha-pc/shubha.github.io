@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeName(){
+
+            document.getElementById("heading").innerHTML = "New Heading"
+        }
+
+        function showAlert(){
+
+            window.alert("This is an alert window")
+        }
+        function getInput() {
+
+            var name=document.forms["myform"]["firstname"].value;
+            window.alert(name);
+        }
+        function buttonclicker(Var)
+        {
+            var t= Var;
+
+        }
+    </script>
+</head>
+<body>
+<h1 id="heading">Welcome</h1>
+<button onclick="changeName()">Click</button>
+<button onclick="showAlert()">Show Alert</button>
+<form name="myform">
+<input type="text" name="firstname">
+< input type="submit" value="submit" onClick="getInput()">
+<br><br><br>
+<tr>
+    <button onclick="showAlert()">1</button>
+    <button onclick="showAlert()">2</button>
+    <button onclick="showAlert()">3</button>
+
+</tr>
+<br>
+    <tr>
+        <button onclick="showAlert()">4</button>
+        <button onclick="showAlert()">5</button>
+        <button onclick="showAlert()">6</button>
+
+    </tr>
+</br>
+    <tr>
+        <button onclick="showAlert()">7</button>
+        <button onclick="showAlert()">8</button>
+        <button onclick="showAlert()">9</button>
+
+    </tr>
+</br>
+</form>
+</body>
+</html>
